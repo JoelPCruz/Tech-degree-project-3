@@ -1,0 +1,210 @@
+/* BASE STYLES */
+
+* {
+    font-family:'merriweather', serif;
+}
+
+body {
+    max-width: 100%;
+}
+
+/* aligns text to center and gives it the background color */
+header {
+    text-align:center;
+    padding:15px;
+    font-family: 'merriweather', serif;
+    background-color: rgb(36, 49, 60);
+}
+
+header,
+h1 {
+    color:white;
+}
+/* makes the legend for our first fieldset bold */
+legend{
+    padding:20px;
+    font-weight:400px;
+}
+
+label,
+p {
+    color: rgb(158, 155, 155);    
+}
+
+/* MAIN STYLES */
+
+/* Places our form more towards the center of the webpage, by applying padding */
+.container {
+    padding: 5%;
+    background: whitesmoke;
+}
+
+fieldset {
+    border:none;
+}
+
+/* Places our .box-1 (containing our h2 and p elements) in the center and gives its some bottom margin */
+.box-1 {
+    text-align:center;
+    margin-bottom: 25px;
+}
+
+/* By creating a div with the class .border inside we are able to make border on the top and a border on the bottom we create a double sided border with one thicker than the other */
+.border {
+    height: auto;
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+    padding: 2px;
+}
+
+/*(we're targeting the label attribute inside of our class) Using the Mobile First we display our labels to block and give it some spacing */
+.top-of-form label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* (we're targeting the input and select attributes inside of our class) We get rid of our border in our input and select fields widen it, give it some spacing, and then we give it a greyish background color so it can be seen*/
+.top-of-form input,
+.top-of-form select {
+    width: 92%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(235, 232, 232);
+    line-height: 1px;
+}
+
+
+ 
+/* Making the select field as wide as the other fields */
+.top-of-form select{
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Shortening the width of zip */
+#zip {
+    width: 50%;
+}
+
+/* (input) fields text aligned to the left */
+input {
+    text-align: left;
+}
+
+/* places (placeholder)s to the right of the field, puts it in italics, and give it some space */
+input[placeholder] {
+    text-align: right;
+    font-style: italic;
+    padding-right: 3px;
+ }
+
+ /* makes the field options bigger when focused */
+ input:focus,
+ select:focus,
+ textarea:focus {
+    transition: 1.5s;
+    transform: scale(1.1);
+ }
+
+ hr {
+     border: solid black 1px;
+ }
+
+ /* Gives spacing to the bottom of the form */
+ .bottom-of-form label {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+/* Aligns "other topics" paragraph. */
+.comment label {
+    margin-left: 0;
+}
+
+/* Spaces the comment section */
+#comment {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* Spaces the text area and changes the background color, removing the border */
+textarea {
+    max-width:100%;
+    width:100%;
+    border: none;
+    background: rgb(235, 232, 232);
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+
+/* makes the submit button */
+.button {
+    width: 100%;
+    background: rgb(6, 196, 248);
+    border: none;
+    border-radius: 5px;
+    color:white;
+    padding: 25px 0;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* changes color when hovered */
+.button:hover {
+    background-color: #2e67f8;
+    color:black;
+}
+
+/* aligns copy to the center */
+.copy {
+    text-align: center;
+}
+
+/*  
+MEDIA QUERRYS
+*/
+
+/* Changes the display when the widths atleast 768px */
+@media (min-width:768px) {
+    .top-of-form {
+        display: inline-block;
+    }
+
+    /* Giving our container some spacing */
+    .container {
+        width:50%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #zip {
+        max-width: 25%;
+        flex-basis: 25%;
+        margin-right: 45%;
+    }
+
+    /* Puts text next to the content */
+    .desktop {
+       display:flex;
+       align-items: center;
+       justify-content: space-between; 
+    }
+
+
+    .input-box {
+        width: 70%;
+        padding-right:16px;
+    }
+
+    /* Adjusts width for our input and select fields on wider screens */
+
+    .top-of-form {
+        box-sizing: border-box;
+    }
+}
+
