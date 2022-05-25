@@ -24,7 +24,7 @@ h1 {
 /* makes the legend for our first fieldset bold */
 legend{
     padding:20px;
-    font-weight:400px;
+    font-weight:400;
 }
 
 label,
@@ -68,7 +68,7 @@ fieldset {
     width: 100%;
     border-top: 1px solid black;
     margin:20px auto;
-    padding:8px auto;/*  aligns the line to the edges */
+    padding:8px;/*  aligns the line to the edges */
 }
 
 /*(we're targeting the label attribute inside of our class) Using the Mobile First we display our labels to block and give it some spacing */
