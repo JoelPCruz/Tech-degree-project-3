@@ -91,7 +91,7 @@ fieldset {
 
 /* Shortening the width of zip */
 #zip {
-    width: 50%;
+    width: 25%;
 }
 
 /* (input) fields text aligned to the left */
@@ -147,7 +147,7 @@ textarea {
 }
 
 /* makes the submit button */
-#button {
+.button {
     width: 100%;
     background: rgb(6, 196, 248);
     border: none;
@@ -156,11 +156,12 @@ textarea {
     padding: 25px 0;
     font-size: 24px;
     text-align: center;
+    cursor: pointer;
 }
 
 
 /* changes color when hovered */
-#button:hover {
+.button:hover {
     background-color: #2e67f8;
     color:black;
 }
