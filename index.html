@@ -30,65 +30,37 @@
 
                     <legend><h2>Contact Information</h2></legend>
                     <div class="top-of-form">
-                        <div class="desktop">
-                            <div>
+                        <div class="form-input">
                             <label for="fullname">Full name</label> <!-- I create a (label) linking it to my (input) using the (for) and matching it with my (inputs)(ID)-->
                             <!-- TEXT INPUT -->
-                            </div>   
-                            <div class="input-box">
                             <input type="text" id="fullname" name="user_name" placeholder="Required"> <!-- (name)is our server side code.-->
-                            </div>
                         </div>
-                        <br>
 
-                        <div class="desktop">
-                            <div>
+                        <div class="form-input">
                             <!-- EMAIL INPUT -->
                             <label for="email">Email Address</label>
-                            </div>
-                            <div class="input-box">
                             <input type="email" id="email" name="user_email" placeholder="Required">
-                            </div>
                         </div>
-                        <br>
 
-                        <div class="desktop">
-                            <div>
+                        <div class="form-input">
                             <!-- TELEPHONE INPUT -->
                             <label for="phone">Phone Number</label>
-                            </div>
-                            <div class="input-box">
                             <input type="tel" id="phone" name="user_phone">
-                            </div>
                         </div>
-                        <br>
 
-                        <div class="desktop">
-                            <div>
+                        <div class="form-input">
                             <label for="address">Street Address</label>
-                            </div>
-                            <div class="input-box">
                             <input type="text" id="address" name="user_address">
-                            </div>
                         </div>
-                        <br>
 
-                        <div class="desktop">
-                            <div>
+                        <div class="form-input">
                             <label for="city">City</label>
-                            </div>
-                            <div class="input-box">
                             <input type="city" id="city" name="user_city">
-                            </div>
                         </div>
-                        <br>
 
-                        <div class="desktop">
-                            <div class="select-box">
+                        <div class="form-input">
                             <!-- SELECT MENU -->
                             <label for="state">State</label>
-                            </div>
-                            <div>
                             <select id="state" name="user_state">
                                 <option value="choose_state">Choose State</option>
                                 <option value="AL">Alabama</option>
@@ -143,60 +115,63 @@
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
                             </select>
-                            </div>
                         </div>
-                        <br>
 
-                        <div class="desktop">
-                            <div>
+                        <div class="form-input">
                             <label for="zip">Zip Code</label>
-                            </div>
-                            <div class="input-box">
-                            <input type="text" id="zip" name="user_zip">                            
+                            <div class="zip-div">
+                                <input type="text" id="zip" name="user_zip">                            
                             </div>
                         </div>
-                        <br>
 
                     </div>
                 </fieldset>
-                <hr>
 
                 <!-- THE NEWSLETTER SECTION -->
 
-                <fieldset class="bottom-of-form">
+                <fieldset>
                     <legend> Newsletter </legend>
                     <p>Select the newsletter you would like to receive</p>
                     <!-- CHECKBOX INPUT -->
-                    <label for="htmlnews">HTML News</label>
-                    <input type="checkbox" id="htmlnews" name="user_news">
-                    <br>
+                    <div class="bottom-of-form">
+                        <div class="form-input2">
+                            <label for="htmlnews">HTML News</label>
+                            <input type="checkbox" id="htmlnews" name="user_news">
+                        </div>
 
-                    <label for="cssnews">CSS News</label>
-                    <input type="checkbox" id="cssnews" name="user_news">
+                        <div class="form-input2">
+                        <label for="cssnews">CSS News</label>
+                        <input type="checkbox" id="cssnews" name="user_news">
+                        </div>
 
-                    <label for="jsnews">Javascript News</label>
-                    <input type="checkbox" id="jsnews" name="user_news">
-                    <br>
+                        <div class="form-input2">
+                        <label for="jsnews">Javascript News</label>
+                        <input type="checkbox" id="jsnews" name="user_news">
+                        </div>
 
-                    <p>Newsletter format</p>
-                    <!-- RADIO INPUT -->
-                    <label for="html">HTML</label>
-                    <input type="radio" id="html" name="user_format">
-                    <br>
+                        <p>Newsletter format</p>
 
-                    <label for="pt">Plain Text</label>
-                    <input type="radio" id="pt" name="user_format">
-                    <br>
-                    <div class="comment">
-                        <!-- TEXTAREA -->
-                        <label for="comment">Other topics you'd like to hear about</label>
-                        <textarea id="comment" name="user_comment" rows="8" cols="80"></textarea>
-                    </div>
-                    <br>
+                        <div class="form-input2">
+                        <!-- RADIO INPUT -->
+                        <label for="html">HTML</label>
+                        <input type="radio" id="html" name="user_format">
+                        </div>
                     
-                    <p class="copy">Copyright The Code Review</p>
-                    <!-- SUBMIT BUTTON -->
-                    <input class="button" type="submit" value="Sign-Up">
+                        <div class="form-input2">
+                        <label for="pt">Plain Text</label>
+                        <input type="radio" id="pt" name="user_format">
+                        </div>
+
+                        <div class="comment">
+                            <!-- TEXTAREA -->
+                            <label for="comment">Other topics you'd like to hear about</label>
+                            <textarea id="comment" name="user_comment" rows="8" cols="80"></textarea>
+                        </div>
+                    
+                        <p class="copy">Copyright The Code Review</p>
+                        <!-- SUBMIT BUTTON -->
+                        <input type="submit" value="Sign-Up">
+                    </div>
                 </fieldset>
             </form>
         </div>

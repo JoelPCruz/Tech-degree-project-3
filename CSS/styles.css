@@ -1,6 +1,7 @@
 /* BASE STYLES */
 
 * {
+    box-sizing: border-box; /* accounts margin and padding */
     font-family:'merriweather', serif;
 }
 
@@ -39,6 +40,10 @@ p {
     background: whitesmoke;
 }
 
+.form-input {
+    margin: 20px 0;
+}
+
 fieldset {
     border:none;
 }
@@ -68,7 +73,7 @@ fieldset {
 /* (we're targeting the input and select attributes inside of our class) We get rid of our border in our input and select fields widen it, give it some spacing, and then we give it a greyish background color so it can be seen*/
 .top-of-form input,
 .top-of-form select {
-    width: 92%;
+    width: 100%;
     padding: 15px;
     border: none;
     border-radius: 5px;
@@ -142,7 +147,7 @@ textarea {
 }
 
 /* makes the submit button */
-.button {
+#button {
     width: 100%;
     background: rgb(6, 196, 248);
     border: none;
@@ -151,18 +156,29 @@ textarea {
     padding: 25px 0;
     font-size: 24px;
     text-align: center;
-    cursor: pointer;
 }
 
+
 /* changes color when hovered */
-.button:hover {
+#button:hover {
     background-color: #2e67f8;
     color:black;
+}
+
+
+.form-input2 label{
+    text-align: right;
 }
 
 /* aligns copy to the center */
 .copy {
     text-align: center;
+}
+
+.form-input2 {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*  
@@ -171,29 +187,33 @@ MEDIA QUERRYS
 
 /* Changes the display when the widths atleast 768px */
 @media (min-width:768px) {
+    
+    /* makes the form the full width */
     .top-of-form {
         display: inline-block;
+        width:100%;
     }
 
     /* Giving our container some spacing */
     .container {
-        width:50%;
+        width: 75%;
         margin: auto;
         padding-top: 50px;
     }
 
-    #zip {
+    /* #zip {
         max-width: 25%;
         flex-basis: 25%;
         margin-right: 45%;
-    }
+    } */
 
     /* Puts text next to the content */
-    .desktop {
+    .form-input {
        display:flex;
        align-items: center;
        justify-content: space-between; 
     }
+
 
 
     .input-box {
@@ -206,5 +226,20 @@ MEDIA QUERRYS
     .top-of-form {
         box-sizing: border-box;
     }
+    
+    .top-of-form .form-input input {
+        width: 75%;
+    }
+
+    .top-of-form .form-input select {
+        width: 75%;
+    }
+
+    .top-of-form .form-input .zip-div {
+        width: 75%;
+    }
+
 }
+
+
 
