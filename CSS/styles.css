@@ -63,6 +63,14 @@ fieldset {
     padding: 2px;
 }
 
+.border2 {
+    height: auto;
+    width: 100%;
+    border-top: 1px solid black;
+    margin:20px;
+    padding:8px;
+}
+
 /*(we're targeting the label attribute inside of our class) Using the Mobile First we display our labels to block and give it some spacing */
 .top-of-form label{
     display: block;
