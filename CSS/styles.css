@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box; /* accounts margin and padding */
-    font-family:'merriweather', serif;
+    font-family: 'Spline Sans Mono', monospace;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 header {
     text-align:center;
     padding:15px;
-    font-family: 'merriweather', serif;
+    font-family: 'Spline Sans Mono', monospace;
     background-color: rgb(36, 49, 60);
 }
 
@@ -24,7 +24,7 @@ h1 {
 /* makes the legend for our first fieldset bold */
 legend{
     padding:20px;
-    font-weight:400;
+    font-weight:700;
 }
 
 label,
@@ -99,7 +99,7 @@ fieldset {
 
 /* Shortening the width of zip */
 #zip {
-    width: 25%;
+    width: 50%;
 }
 
 /* (input) fields text aligned to the left */
@@ -196,6 +196,19 @@ textarea {
     justify-content: flex-start;
 }
 
+.zip-div input[placeholder] {
+    text-align: left;
+}
+
+.form-input input[placeholder] {
+    text-align: left;
+}
+
+#email[placeholder],
+#fullname[placeholder] {
+    text-align: right;
+}
+
 
 /*  
 MEDIA QUERRYS
@@ -222,6 +235,10 @@ MEDIA QUERRYS
         flex-basis: 25%;
         margin-right: 45%;
     } */
+
+    #zip {
+        width: 25%;
+    }
 
     /* Puts text next to the content */
     .form-input {
