@@ -196,18 +196,18 @@ textarea {
     justify-content: flex-start;
 }
 
-.zip-div input[placeholder] {
-    text-align: left;
-}
-
-.form-input input[placeholder] {
-    text-align: left;
-}
-
-#email[placeholder],
-#fullname[placeholder] {
+input::placeholder {
     text-align: right;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    text-align: left;
+}
+
+
+
 
 
 /*  
